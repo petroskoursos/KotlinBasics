@@ -2,23 +2,14 @@ package com.example.kotlinbasics
 
 fun main()
 {
-    println("give the first number you want to add")
-    var num1= readln().toInt()
-    println("give the second number you want to add")
-    var num2= readln().toInt()
-    var myresult= add(num1,num2)
 
-    println("the result of $num1 + $num2 = $myresult")
+    //creating an object of the class dog
+    var jack=Dog(name = "jack", bread = "doggo")
 
-
-
+    println("${jack.name} is a  ${jack.bread}")
 }
-fun add(num1:Int, num2:Int):Int{
-    var result=num1+num2
-    return result
 
 
-}
 fun makeCoffee(sugarcount:Int,name:String)
 {
     if(sugarcount==1)
